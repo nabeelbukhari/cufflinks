@@ -33,7 +33,7 @@ __LAYOUT_AXIS=['autorange','autotick','backgroundcolor','categoryarray','categor
 			   'mirror','nticks','showaxeslabels','showbackground','showexponent','showgrid','showline','showspikes',
 			   'showticklabels','showtickprefix','showticksuffix','spikecolor','spikesides','spikethickness',
 			   'tick0','tickangle','tickcolor','tickfont','tickformat','ticklen','tickmode','tickprefix','ticks',
-			   'ticksuffix','ticktext','ticktextsrc','tickvals','tickvalssrc','tickwidth','titlefont',
+			   'ticksuffix','ticktext','ticktextsrc','tickvals','tickvalssrc','tickwidth','title',
 			   'zeroline','zerolinecolor','zerolinewidth']
 
 X_Y = ['anchor', 'automargin', 'autorange', 'calendar', 'categoryarray', 'categoryarraysrc', 'categoryorder', 'color',
@@ -42,7 +42,7 @@ X_Y = ['anchor', 'automargin', 'autorange', 'calendar', 'categoryarray', 'catego
 	   'separatethousands', 'showexponent', 'showgrid', 'showline', 'showspikes', 'showticklabels', 'showtickprefix', 'showticksuffix', 'side',
 	   'spikecolor', 'spikedash', 'spikemode', 'spikesnap', 'spikethickness', 'tick0', 'tickangle', 'tickcolor', 'tickfont', 'tickformat',
 	   'tickformatstops', 'ticklen', 'tickmode', 'tickprefix', 'ticks', 'ticksuffix', 'ticktext', 'ticktextsrc', 'tickvals', 'tickvalssrc',
-	   'tickwidth', 'title', 'titlefont', 'type', 'visible', 'zeroline', 'zerolinecolor', 'zerolinewidth']
+	   'tickwidth', 'title', 'type', 'visible', 'zeroline', 'zerolinecolor', 'zerolinewidth']
 
 __LAYOUT_AXIS_X=['xaxis_'+_ for _ in X_Y]
 __LAYOUT_AXIS_Y=['yaxis_'+_ for _ in X_Y]
@@ -228,8 +228,10 @@ def getLayout(kind=None,theme=None,title='',xTitle='',yTitle='',zTitle='',barmod
 	theme_data = getTheme(theme)
 	layout=theme_data['layout']
 	try:
-		layout['xaxis']['title'].update({'text':xTitle})
-		layout['yaxis']['title'].update({'text':yTitle})
+		if xTitle:
+			layout['xaxis']['title'].update({'text':xTitle})
+		if yTitle:
+			layout['yaxis']['title'].update({'text':yTitle})
 	except:
 		layout['xaxis'].update({'title':xTitle})
 		layout['yaxis'].update({'title':yTitle})
