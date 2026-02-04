@@ -739,7 +739,7 @@ def _iplot(self,kind='scatter',data=None,layout=None,filename='',sharing=None,ti
 					if 'linecolor' in tools.getTheme(theme=theme):
 						linecolor=normalize(tools.getTheme(theme=theme)['linecolor'])
 					else: 
-						linecolor=tools.getLayout(theme=theme)['xaxis']['titlefont']['color']
+						linecolor=tools.getLayout(theme=theme)['xaxis']['title']['font']['color']
 				dict_modifiers['line']['color']=linecolor			
 			dict_modifiers['line']=tools.updateColors(dict_modifiers['line'])
 			marker['line']=deep_update(marker['line'],dict_modifiers['line'])
@@ -798,11 +798,11 @@ def _iplot(self,kind='scatter',data=None,layout=None,filename='',sharing=None,ti
 						_size=size
 					_data=Scatter3d(x=_x,y=_y,mode=mode,name=_,
 								marker=dict(color=colors[_],symbol=symbol,size=_size,opacity=opacity,
-												line=dict(width=width)),textfont=tools.getLayout(theme=theme)['xaxis']['titlefont'])
+												line=dict(width=width)),textfont=tools.getLayout(theme=theme)['xaxis']['title']['font']['color'])
 					if '3d' in kind:
 						_data=Scatter3d(x=_x,y=_y,z=_z,mode=mode,name=_,
 								marker=dict(color=colors[_],symbol=symbol,size=_size,opacity=opacity,
-												line=dict(width=width)),textfont=tools.getLayout(theme=theme)['xaxis']['titlefont'])
+												line=dict(width=width)),textfont=tools.getLayout(theme=theme)['xaxis']['title']['font']['color'])
 					else:
 						#see error 168
 						if type(_x)==np.ndarray:
@@ -814,7 +814,7 @@ def _iplot(self,kind='scatter',data=None,layout=None,filename='',sharing=None,ti
 						
 						_data=Scatter(x=_x,y=_y,mode=mode,name=_,
 								marker=dict(color=colors[_],symbol=symbol,size=_size,opacity=opacity,
-												line=dict(width=width)),textfont=tools.getLayout(theme=theme)['xaxis']['titlefont'])
+												line=dict(width=width)),textfont=tools.getLayout(theme=theme)['xaxis']['title']['font']['color'])
 					if text:
 						_data.update(text=_text)
 					data.append(_data)

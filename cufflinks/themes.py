@@ -12,18 +12,18 @@ THEMES = {
 				'yaxis' : {
 					'tickfont' : {'color':'grey10'},
 					'gridcolor' : 'lightivory',
-					'titlefont' : {'color':'grey10'},
+					'title': { 'font' : {'color':'grey10'} },
 					'zerolinecolor' : 'lightivory',
 					'showgrid' : True
 				},
 				'xaxis' : {
 					'tickfont' : {'color':'grey10'},
 					'gridcolor' : 'lightivory',
-					'titlefont' : {'color':'grey10'},
+					'title': { 'font' : {'color':'grey10'} },
 					'zerolinecolor' : 'lightivory',
 					'showgrid' : True
 				},
-				'titlefont' : {'color':'charcoal'}
+				'font' : {'color':'charcoal'}
 			},
 			'annotations' : {
 				'fontcolor' : 'grey10',
@@ -43,18 +43,18 @@ THEMES = {
 				'yaxis' : {
 					'tickfont' : {'color':'pearl06'},
 					'gridcolor' : 'pearl03',
-					'titlefont' : {'color':'pearl06'},
+					'title': { 'font' : {'color':'pearl06'} },
 					'zerolinecolor' : 'pearl03',
 					'showgrid' : True
 				},
 				'xaxis' : {
 					'tickfont' : {'color':'pearl06'},
 					'gridcolor' : 'pearl03',
-					'titlefont' : {'color':'pearl06'},
+					'title': { 'font' : {'color':'pearl06'} },
 					'zerolinecolor' : 'pearl03',
 					'showgrid' : True
 				},
-				'titlefont' : {'color':'pearl06'}
+				'font' : {'color':'pearl06'}
 			},
 			'annotations' : {
 				'fontcolor' : 'pearl06',
@@ -83,18 +83,18 @@ THEMES = {
 				'yaxis' : {
 					'tickfont' : {'color':'grey12'},
 					'gridcolor' : 'grey08',
-					'titlefont' : {'color':'pearl'},
+					'title': { 'font' : {'color':'pearl'} },
 					'zerolinecolor' : 'grey09',
 					'showgrid' : True
 				},
 				'xaxis' : {
 					'tickfont' : {'color':'grey12'},
 					'gridcolor' : 'grey08',
-					'titlefont' : {'color':'pearl'},
+					'title': { 'font' : {'color':'pearl'} },
 					'zerolinecolor' : 'grey09',
 					'showgrid' : True
 				},
-				'titlefont' : {'color':'pearl'}
+				'font' : {'color':'pearl'}
 			},
 			'annotations' : {
 				'fontcolor' : 'pearl',
@@ -113,18 +113,18 @@ THEMES = {
 				'yaxis' : {
 					'tickfont' : {'color':'grey12'},
 					'gridcolor' : 'grey08',
-					'titlefont' : {'color':'pearl'},
+					'title': { 'font' : {'color':'pearl'} },
 					'zerolinecolor' : 'grey09',
 					'showgrid' : True
 				},
 				'xaxis' : {
 					'tickfont' : {'color':'grey12'},
 					'gridcolor' : 'grey08',
-					'titlefont' : {'color':'pearl'},
+					'title': { 'font' : {'color':'pearl'} },
 					'zerolinecolor' : 'grey09',
 					'showgrid' : True
 				},
-				'titlefont' : {'color':'pearl'}
+				'font' : {'color':'pearl'}
 			},
 			'annotations' : {
 				'fontcolor' : 'pearl',
@@ -143,18 +143,18 @@ THEMES = {
 				'yaxis' : {
 					'tickfont' : {'color':'pearl06'},
 					'gridcolor' : 'pearl03',
-					'titlefont' : {'color':'pearl06'},
+					'title': { 'font' : {'color':'pearl06'} },
 					'zerolinecolor' : 'pearl03',
 					'showgrid' : True
 				},
 				'xaxis' : {
 					'tickfont' : {'color':'pearl06'},
 					'gridcolor' : 'pearl03',
-					'titlefont' : {'color':'pearl06'},
+					'title': { 'font' : {'color':'pearl06'} },
 					'zerolinecolor' : 'pearl03',
 					'showgrid' : True
 				},
-				'titlefont' : {'color':'pearl06'}
+				'font' : {'color':'pearl06'}
 			},
 			'annotations' : {
 				'fontcolor' : 'pearl06',
@@ -183,18 +183,18 @@ THEMES = {
 				'yaxis' : {
 					'tickfont' : {'color':'polargrey'},
 					'gridcolor' : 'pearl03',
-					'titlefont' : {'color':'polargrey'},
+					'title': { 'font' : {'color':'polargrey'} },
 					'zerolinecolor' : 'pearl03',
 					'showgrid' : True
 				},
 				'xaxis' : {
 					'tickfont' : {'color':'polargrey'},
 					'gridcolor' : 'pearl03',
-					'titlefont' : {'color':'polargrey'},
+					'title': { 'font' : {'color':'polargrey'} },
 					'zerolinecolor' : 'pearl03',
 					'showgrid' : True
 				},
-				'titlefont' : {'color':'polardark'}
+				'font' : {'color':'polardark'}
 			},
 			'annotations' : {
 				'fontcolor' : 'polardark',
@@ -223,18 +223,18 @@ THEMES = {
 				'yaxis' : {
 					'tickfont' : {'color':'henanigans_light1'},
 					'gridcolor' : 'henanigans_grey1',
-					'titlefont' : {'color':'henanigans_light1'},
+					'title': { 'font' : {'color':'henanigans_light1'} },
 					'zerolinecolor' : 'henanigans_grey2',
 					'showgrid' : True
 				},
 				'xaxis' : {
 					'tickfont' : {'color':'henanigans_light1'},
 					'gridcolor' : 'henanigans_grey1',
-					'titlefont' : {'color':'henanigans_light1'},
+					'title': { 'font' : {'color':'henanigans_light1'} },
 					'zerolinecolor' : 'henanigans_grey2',
 					'showgrid' : True
 				},
-				'titlefont' : {'color':'henanigans_light2'}
+				'font' : {'color':'henanigans_light2'}
 			},
 			'annotations' : {
 				'fontcolor' : 'henanigans_orange2',
